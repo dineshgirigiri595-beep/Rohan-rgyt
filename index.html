@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>ROHAN RGYT | Gaming</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="bg-glow glow-1"></div><div class="bg-glow glow-2"></div>
+  <header class="navbar">
+    <a class="logo" href="#home">ROHAN <b>RGYT</b></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#games">Games</a><a href="#tournaments">Tournaments</a><a href="#leaderboard">Leaderboard</a><a href="#community">Community</a>
+    </nav>
+    <button class="nav-btn" data-popup="join">JOIN NOW</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="small-title">WELCOME TO THE BATTLE</p>
+        <h1>PLAY.<span>COMPETE.</span>DOMINATE.</h1>
+        <p class="hero-text">Enter the world of ROHAN RGYT. Compete with gamers, join tournaments and become the ultimate champion.</p>
+        <div class="hero-buttons"><button class="main-btn" id="playNow">PLAY NOW</button><button class="outline-btn" id="exploreGames">EXPLORE GAMES</button></div>
+      </div>
+      <div class="hero-art"><div class="circle"></div><div class="controller">🎮</div><div class="floating-card card-one">READY TO PLAY</div><div class="floating-card card-two">ROHAN RGYT</div></div>
+    </section>
+
+    <section class="stats">
+      <div><strong>25K+</strong><span>Players</span></div><div><strong>150+</strong><span>Tournaments</span></div><div><strong>50+</strong><span>Games</span></div><div><strong>₹10L+</strong><span>Rewards</span></div>
+    </section>
+
+    <section id="games" class="games-section">
+      <div class="section-heading"><p>CHOOSE YOUR BATTLE</p><h2>FEATURED <span>GAMES</span></h2></div>
+      <div class="search-box"><input id="gameSearch" type="search" placeholder="Search games..." aria-label="Search games"></div>
+      <div class="games-grid" id="gameGrid">
+        <article class="game-card" data-name="valorant"><div class="game-image red-bg">🎯</div><div class="game-info"><span>TACTICAL</span><h3>VALORANT</h3><p>5v5 Tactical Shooter</p><button data-game="VALORANT">VIEW GAME</button></div></article>
+        <article class="game-card" data-name="battle royale"><div class="game-image dark-red">🔫</div><div class="game-info"><span>BATTLE ROYALE</span><h3>BATTLE ROYALE</h3><p>Last Player Standing</p><button data-game="BATTLE ROYALE">VIEW GAME</button></div></article>
+        <article class="game-card" data-name="cyber strike"><div class="game-image black-red">⚡</div><div class="game-info"><span>ACTION</span><h3>CYBER STRIKE</h3><p>Future Combat Arena</p><button data-game="CYBER STRIKE">VIEW GAME</button></div></article>
+      </div>
+      <p class="empty-message" id="emptyMessage" hidden>No games found.</p>
+    </section>
+
+    <section id="tournaments" class="games-section">
+      <div class="section-heading"><p>PROVE YOUR SKILLS</p><h2>UPCOMING <span>TOURNAMENTS</span></h2></div>
+      <div class="tournament-list">
+        <div class="tournament"><div><h3>RGYT RED WARS</h3><p>Squad Tournament • 5v5</p></div><div class="prize"><small>PRIZE POOL</small><strong>₹50,000</strong></div><button data-tournament="RGYT RED WARS">JOIN</button></div>
+        <div class="tournament"><div><h3>NIGHT GAMING CUP</h3><p>Solo Tournament</p></div><div class="prize"><small>PRIZE POOL</small><strong>₹25,000</strong></div><button data-tournament="NIGHT GAMING CUP">JOIN</button></div>
+        <div class="tournament"><div><h3>RGYT CHAMPIONSHIP</h3><p>Ultimate Gaming Tournament</p></div><div class="prize"><small>PRIZE POOL</small><strong>₹1,00,000</strong></div><button data-tournament="RGYT CHAMPIONSHIP">JOIN</button></div>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="games-section">
+      <div class="section-heading"><p>TOP PLAYERS</p><h2>LEADER<span>BOARD</span></h2></div>
+      <div class="leaderboard">
+        <div class="player first"><strong>#1</strong><span>🔥 ShadowX</span><b>9850 XP</b></div>
+        <div class="player"><strong>#2</strong><span>⚡ RohanPro</span><b>9210 XP</b></div>
+        <div class="player"><strong>#3</strong><span>💀 DarkKnight</span><b>8940 XP</b></div>
+        <div class="player"><strong>#4</strong><span>🎯 SniperOP</span><b>8510 XP</b></div>
+        <div class="player"><strong>#5</strong><span>👑 KingYT</span><b>8200 XP</b></div>
+      </div>
+    </section>
+
+    <section id="community" class="about">
+      <div><p class="small-title">JOIN THE COMMUNITY</p><h2>BECOME PART OF <span>ROHAN RGYT</span></h2><p>Find teammates, participate in events, share your clips and compete with gamers from around the world.</p><button class="main-btn" data-popup="community">JOIN COMMUNITY</button></div>
+      <div class="about-box"><div>🔥</div><h3>GAMING COMMUNITY</h3><p>Play • Compete • Connect</p></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home">ROHAN <b>RGYT</b></a><p>© 2026 ROHAN RGYT. All Rights Reserved.</p><div class="social"><a href="#community" aria-label="YouTube">YT</a><a href="#community" aria-label="Discord">DC</a><a href="#community" aria-label="Instagram">IG</a></div></footer>
+
+  <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-box"><button class="close" id="closePopup" aria-label="Close popup">×</button><div class="popup-icon">🎮</div><h2 id="popupTitle">WELCOME GAMER!</h2><p id="popupText"></p><button class="main-btn" id="popupOk">OK</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
